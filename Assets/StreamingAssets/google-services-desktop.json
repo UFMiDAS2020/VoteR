@@ -15,6 +15,30 @@
       },
       "oauth_client": [
         {
+          "client_id": "258923235616-208q1rb0ec52o2t8gp3nobd6gth9o0m2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.MiDAS2020.VoteR",
+            "certificate_hash": "47b4b98a53213898b36a9a179abac2a9e8ae0564"
+          }
+        },
+        {
+          "client_id": "258923235616-ldcrsv9v1i46hltotfje31oop6ivgj9n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.MiDAS2020.VoteR",
+            "certificate_hash": "6f535920a489f57bb5fcde3b4bf618d097772550"
+          }
+        },
+        {
+          "client_id": "258923235616-o3hrrsk1ior9o4e1nh4v250vj67lgbc9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.MiDAS2020.VoteR",
+            "certificate_hash": "51ed70ab2b3c8bfdb74ec67bd2e775a520fe613f"
+          }
+        },
+        {
           "client_id": "258923235616-83rgftarh46jrdkh14meudiugnacv88r.apps.googleusercontent.com",
           "client_type": 3
         }
