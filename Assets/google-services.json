@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "258923235616",
+    "firebase_url": "https://voter-41176.firebaseio.com",
+    "project_id": "voter-41176",
+    "storage_bucket": "voter-41176.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:258923235616:android:cbacc09da4f330d1d52f45",
+        "android_client_info": {
+          "package_name": "com.MiDAS2020.VoteR"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "258923235616-83rgftarh46jrdkh14meudiugnacv88r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-Yl2HOJ5ZDPP1WhDwffaIfbtWa0q25Mg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "258923235616-83rgftarh46jrdkh14meudiugnacv88r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
