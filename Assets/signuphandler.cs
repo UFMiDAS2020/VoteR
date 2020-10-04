@@ -59,7 +59,7 @@ using System.Collections.Generic;
             email = emailText.text;
             password = passText.text;
             verify = verifyText.text;
-
+            
             // Sign up stuff here
             auth.CreateUserWithEmailAndPasswordAsync(email, password).ContinueWith(task => {
                 if (task.IsCanceled)
@@ -82,7 +82,7 @@ using System.Collections.Generic;
                 //string json = JsonUtility.ToJson(user);
 
                 //reference.Child("users").Child(newUser.UserId).SetRawJsonValueAsync(name);
-
+                
                 Debug.LogFormat("Firebase user created successfully: {0} ({1})", newUser.Email, newUser.UserId);
                 // debugText.text = $"Firebase user created successfully: {newUser.DisplayName} ({newUser.UserId})"
             });
