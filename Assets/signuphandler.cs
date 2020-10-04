@@ -4,18 +4,19 @@ using TMPro;
 using UnityEngine;
 using Firebase.Auth;
 using UnityEngine.SceneManagement;
+using System;
 
 public class signuphandler : MonoBehaviour
 {
     public TMP_Text emailText, passText, verifyText, debugText;
    // public UnityEngine.UI.Button signUpButton;
     string email, password, verify;
-    
+    Firebase.Auth.FirebaseAuth auth;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        auth = Firebase.Auth.FirebaseAuth.DefaultInstance;
     }
 
     // Update is called once per frame
@@ -28,11 +29,11 @@ public class signuphandler : MonoBehaviour
     {
         debugText.text = "Button Clicked";
         email = emailText.text;
-        Debug.Log("This is the email" + email);
+        Console.WriteLine("This is the email" + email);
         password = passText.text;
         verify = verifyText.text;
+
         // Sign up stuff here
-        Firebase.Auth.FirebaseAuth auth = Firebase.Auth.FirebaseAuth.DefaultInstance;
         auth.CreateUserWithEmailAndPasswordAsync(email, password).ContinueWith(task => {
                     if (task.IsCanceled)
                     {
@@ -49,10 +50,10 @@ public class signuphandler : MonoBehaviour
 
                     // Firebase user has been created.
                     Firebase.Auth.FirebaseUser newUser = task.Result;
-                    Debug.LogFormat("Firebase user created successfully: {0} ({1})",
-                        newUser.DisplayName, newUser.UserId);
-                    debugText.text = $"Firebase user created successfully: {newUser.DisplayName} ({newUser.UserId})";
-                });
+                    Debug.LogFormat("Firebase user created successfully: {0} ({1})", newUser.Email, newUser.UserId);
+                    // debugText.text = $"Firebase user created successfully: {newUser.DisplayName} ({newUser.UserId})";
+                    
+        });
         SceneManager.LoadScene("Menu");
 
     }
