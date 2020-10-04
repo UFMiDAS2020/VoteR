@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class buttonhandler : MonoBehaviour
 {
@@ -42,5 +43,9 @@ public class buttonhandler : MonoBehaviour
         notactive2.SetActive(false);
         active.SetActive(true);
 
+    }
+    public void MovetoVrScene()
+    {
+        SceneManager.LoadScene("MainScene");
     }
 }
