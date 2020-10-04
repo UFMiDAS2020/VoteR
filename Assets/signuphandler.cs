@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using Firebase.Auth;
+using UnityEngine.SceneManagement;
 
 public class signuphandler : MonoBehaviour
 {
@@ -52,5 +53,7 @@ public class signuphandler : MonoBehaviour
                         newUser.DisplayName, newUser.UserId);
                     debugText.text = $"Firebase user created successfully: {newUser.DisplayName} ({newUser.UserId})";
                 });
+        SceneManager.LoadScene("Menu");
+
     }
 }
